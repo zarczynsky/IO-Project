@@ -80,8 +80,8 @@ def list_of_lines(file):
     
     list_of_lines = pd.Series(list_of_lines)
     unique_values = list_of_lines.value_counts()
-    return(unique_values)
-        
+    unique_values = unique_values.reset_index(drop = True) 
+    return(unique_values)        
     except IndexError as m:
         print(m)
         print("Lack of file")
