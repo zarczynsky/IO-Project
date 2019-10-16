@@ -1,5 +1,5 @@
 functions.py
-62
+61
 main.py
 6
 python_files.py
@@ -7,9 +7,3 @@ python_files.py
 functions.py->python_files
 main.py->functions
 main.py->python_files
-------------------------------------------
-functions.py - python_files
-main.py - python_files
-main.py - functions
-main.py - functions
-main.py - functions

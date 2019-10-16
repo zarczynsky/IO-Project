@@ -54,8 +54,7 @@ def file_connect(file):
 
 def file_connect_weight(file):
     try:
-        fi = open('graf.txt', 'a')
-        fi.write('------------------------------------------\n')
+        fi = open('connect_weight.txt', 'a')
         for first in file:
             with open(first, 'r') as f:
                 for line in f:
