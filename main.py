@@ -7,3 +7,4 @@ result = python_files.list_directory('.\\', 'py')
 functions.how_many_lines(result)
 functions.file_connect(result)
 
+functions.file_connect_weight(result)
