@@ -68,7 +68,20 @@ def file_connect_weight(file):
                                         fi.write("{} - {}".format(first,el_dalej))
                                         fi.write('\n')
         fi.close()
+        
+import pandas as pd
 
+#funkcja zlicza ilość różnych linii, jako wartość przyjmuje ścieżke do pliku, zwraca serie 
+def list_of_lines(file): 
+    list_of_lines = []
+    with open(file, 'r') as f:
+        for linia in f:
+            list_of_lines.append(linia)
+    
+    list_of_lines = pd.Series(list_of_lines)
+    unique_values = list_of_lines.value_counts()
+    return(unique_values)
+        
     except IndexError as m:
         print(m)
         print("Lack of file")
